@@ -8,7 +8,7 @@
 PRODUCT_NAME = mobile
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.muslim365.mobile
+PRODUCT_BUNDLE_IDENTIFIER = com.example.mobile
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2025 com.muslim365. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 com.example. All rights reserved.
