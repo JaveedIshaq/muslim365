@@ -54,28 +54,31 @@ extension WidgetAnimations on Widget {
   /// Animates a selection indicator with scale effect
   Widget animateSelection({bool isSelected = false}) {
     return animate(target: isSelected ? 1 : 0).scale(
-          end: const Offset(
-            ThemeConstants.selectionScaleEnd,
-            ThemeConstants.selectionScaleEnd,
-          ),
-          duration: ThemeConstants.selectionAnimationDuration.ms,
-        );
+      end: const Offset(
+        ThemeConstants.selectionScaleEnd,
+        ThemeConstants.selectionScaleEnd,
+      ),
+      duration: ThemeConstants.selectionAnimationDuration.ms,
+    );
   }
-
 }
 
 /// Extension methods for list of widgets animations
 extension ListWidgetAnimations on List<Widget> {
   /// Animates a list of settings options with fade in and slide from bottom
   List<Widget> animateSettingsOptions() {
-    return animate(
-      interval: 100.ms,
-    ).fadeIn(
-      duration: 300.ms,
-    ).slideY(
-      begin: 0.2,
-      end: ThemeConstants.slideYEnd,
-      duration: 300.ms,
-    );
+    return animate(interval: 100.ms)
+        .fadeIn(duration: 300.ms)
+        .slideY(begin: 0.2, end: ThemeConstants.slideYEnd, duration: 300.ms);
+  }
+}
+
+/// Extension methods for list of widgets animations
+extension WidgetItemAnimations on Widget {
+  /// Animates a list of settings options with fade in and slide from bottom
+  Widget animateWidget() {
+    return animate()
+        .fadeIn(duration: 800.ms, delay: 200.ms)
+        .slideY(begin: 0.5, end: 0, duration: 800.ms, delay: 200.ms);
   }
 }

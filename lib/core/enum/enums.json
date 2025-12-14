@@ -1,0 +1,77 @@
+[
+    {
+        "schema_name": "public",
+        "enum_name": "banner_status_enum",
+        "enum_values": "{ACTIVE,INACTIVE,SCHEDULED,EXPIRED}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "conversation_type_enum",
+        "enum_values": "{DIRECT,GROUP,SUPPORT}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "delivery_method_enum",
+        "enum_values": "{IN_APP,PUSH,EMAIL,SMS}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "device_type_enum",
+        "enum_values": "{WEB,ANDROID,IOS}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "experience_level_enum",
+        "enum_values": "{ENTRY,MID,SENIOR,EXPERT}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "hospital_type_enum",
+        "enum_values": "{PUBLIC,PRIVATE,CLINIC}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "message_type_enum",
+        "enum_values": "{TEXT,IMAGE,FILE,SYSTEM}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "participant_role_enum",
+        "enum_values": "{ADMIN,MEMBER}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "platform_enum",
+        "enum_values": "{FCM,WEB,APNS}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "priority_enum",
+        "enum_values": "{LOW,NORMAL,HIGH,URGENT}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "proficiency_level_enum",
+        "enum_values": "{BASIC,INTERMEDIATE,ADVANCED,EXPERT}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "registration_status_enum",
+        "enum_values": "{NOT_STARTED,ACCOUNT_CREATED,EMAIL_VERIFIED,PROFESSIONAL_COMPLETED,LOCATION_COMPLETED,DOCUMENTS_COMPLETED,IN_PROGRESS,PENDING_APPROVAL,COMPLETED,REJECTED}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "user_role_enum",
+        "enum_values": "{NURSE,HOSPITAL,ADMIN,AGENCY}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "user_status_enum",
+        "enum_values": "{ACTIVE,INACTIVE,SUSPENDED,DELETED}"
+    },
+    {
+        "schema_name": "public",
+        "enum_name": "verification_status_enum",
+        "enum_values": "{PENDING,VERIFIED,REJECTED,EXPIRED}"
+    }
+]

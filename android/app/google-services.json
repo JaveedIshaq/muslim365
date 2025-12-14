@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "896805410509",
+    "project_id": "sigma-puzzles",
+    "storage_bucket": "sigma-puzzles.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896805410509:android:1f2b0aade9729780eafb84",
+        "android_client_info": {
+          "package_name": "co.spooklabs.sigma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896805410509-489f59sl622q78pr6ouocikia0n1kvp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.spooklabs.sigma",
+            "certificate_hash": "bcb487ff37bbe71cda05cbfdaca55632b032f1d7"
+          }
+        },
+        {
+          "client_id": "896805410509-csi9so98mfq6kn8hgkji4s5b7qojl11j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAehxR-3lifxD37ZYWtwjER4lYnP5dkCzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896805410509-csi9so98mfq6kn8hgkji4s5b7qojl11j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "896805410509-2tood7efbqg7ps5b0k3e32dmt87kiq4t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sigma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896805410509:android:0c9f819cbff327c1eafb84",
+        "android_client_info": {
+          "package_name": "com.mulsim365.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896805410509-csi9so98mfq6kn8hgkji4s5b7qojl11j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAehxR-3lifxD37ZYWtwjER4lYnP5dkCzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896805410509-csi9so98mfq6kn8hgkji4s5b7qojl11j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "896805410509-2tood7efbqg7ps5b0k3e32dmt87kiq4t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sigma"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

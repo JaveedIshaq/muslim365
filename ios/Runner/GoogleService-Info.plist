@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>896805410509-489f59sl622q78pr6ouocikia0n1kvp2.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDEpjmSLZ0Hz-djaGW8ZK9-XcgUmR5XBLE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>896805410509</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mulsim365.mobile</string>
+	<key>PROJECT_ID</key>
+	<string>sigma-puzzles</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sigma-puzzles.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:896805410509:ios:8425784e43dbe218eafb84</string>
+</dict>
+</plist>

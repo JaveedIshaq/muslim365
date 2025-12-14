@@ -1,7 +1,6 @@
-// lib/core/providers/theme_provider.dart
+// lib/features/app_appearance/providers/theme_provider.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../theme/app_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeNotifier extends Notifier<ThemeMode> {
@@ -29,22 +28,13 @@ class ThemeNotifier extends Notifier<ThemeMode> {
 }
 
 // Provider for the theme notifier
-final themeProvider = NotifierProvider<ThemeNotifier, ThemeMode>(ThemeNotifier.new);
+final themeProvider = NotifierProvider<ThemeNotifier, ThemeMode>(
+  ThemeNotifier.new,
+);
 
 // Provider to get the current theme mode
 final themeModeProvider = themeProvider;
 
-// Provider to get the current theme data based on theme mode
-final themeDataProvider = Provider<ThemeData>((ref) {
-  final themeMode = ref.watch(themeModeProvider);
-
-  switch (themeMode) {
-    case ThemeMode.light:
-      return AppTheme.lightTheme;
-    case ThemeMode.dark:
-      return AppTheme.darkTheme;
-    case ThemeMode.system:
-      // Return light theme by default, system theme will be handled by MaterialApp
-      return AppTheme.lightTheme;
-  }
-});
+// Note: themeDataProvider is not needed since main.dart handles theme creation
+// The theme is created in main.dart using createTextTheme and MaterialTheme
+// This provider only manages the theme mode (light/dark/system)

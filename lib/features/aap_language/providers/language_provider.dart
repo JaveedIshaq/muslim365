@@ -24,7 +24,7 @@ class LanguageNotifier extends Notifier<Locale> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? languageCode = prefs.getString(languageCodeKey);
     String? countryCode = prefs.getString(countryCodeKey);
-    
+
     if (languageCode != null) {
       state = Locale(languageCode, countryCode);
     }
@@ -32,7 +32,9 @@ class LanguageNotifier extends Notifier<Locale> {
 }
 
 // Provider for the language notifier
-final languageProvider = NotifierProvider<LanguageNotifier, Locale>(LanguageNotifier.new);
+final languageProvider = NotifierProvider<LanguageNotifier, Locale>(
+  LanguageNotifier.new,
+);
 
 // Provider to get the current language
 final currentLanguageProvider = languageProvider;
@@ -40,15 +42,11 @@ final currentLanguageProvider = languageProvider;
 // Provider to get the current language model
 final currentLanguageModelProvider = Provider<LanguageModel?>((ref) {
   final currentLocale = ref.watch(currentLanguageProvider);
-  
+
   try {
-    return languages.firstWhere(
-      (language) => language.locale == currentLocale,
-    );
+    return languages.firstWhere((language) => language.locale == currentLocale);
   } catch (e) {
     // Return English as default if not found
-    return languages.firstWhere(
-      (language) => language.languageCode == 'en',
-    );
+    return languages.firstWhere((language) => language.languageCode == 'en');
   }
 });

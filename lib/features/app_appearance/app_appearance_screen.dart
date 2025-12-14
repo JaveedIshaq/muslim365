@@ -16,8 +16,8 @@ class AppAppearanceScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final themeMode = ref.watch(themeModeProvider);
-    final currentLanguageModel = ref.watch(currentLanguageModelProvider);
     final l10n = AppLocalizations.of(context)!;
+    final currentLanguageModel = ref.watch(currentLanguageModelProvider);
 
     return Scaffold(
       appBar: AppBar(

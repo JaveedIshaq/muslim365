@@ -8,12 +8,11 @@ import '../models/theme_option.dart';
 import '../providers/theme_provider.dart';
 import 'theme_option_item.dart';
 
-
 /// Theme Selection Bottom Sheet Widget
 ///
 /// A modal bottom sheet that allows users to select between Light, Dark, and System themes.
 /// Provides visual previews and immediate feedback for theme changes.
-/// 
+///
 /// Usage:
 /// ```dart
 /// await ThemeSelectionBottomSheet.show(context);
@@ -22,7 +21,7 @@ class ThemeSelectionBottomSheet extends ConsumerWidget {
   const ThemeSelectionBottomSheet({super.key});
 
   /// Shows the theme selection bottom sheet
-  /// 
+  ///
   /// Returns a Future that completes when the bottom sheet is closed.
   static Future<void> show(BuildContext context) {
     return showModalBottomSheet<void>(
@@ -53,7 +52,8 @@ class ThemeSelectionBottomSheet extends ConsumerWidget {
           _BottomSheetHeader(colorScheme: colorScheme),
           _ThemeOptionsList(
             themeMode: themeMode,
-            onThemeSelected: (mode) => _handleThemeSelection(context, mode, ref),
+            onThemeSelected: (mode) =>
+                _handleThemeSelection(context, mode, ref),
           ),
           _BottomPadding(),
         ],
@@ -75,7 +75,9 @@ class _BottomSheetHandle extends StatelessWidget {
       width: ThemeConstants.handleWidth,
       height: ThemeConstants.handleHeight,
       decoration: BoxDecoration(
-        color: colorScheme.onSurfaceVariant.withValues(alpha: ThemeConstants.handleOpacity),
+        color: colorScheme.onSurfaceVariant.withValues(
+          alpha: ThemeConstants.handleOpacity,
+        ),
         borderRadius: BorderRadius.circular(AppDimensions.radiusXXL),
       ),
     );
@@ -160,19 +162,4 @@ void _handleThemeSelection(
       Navigator.of(context).pop();
     }
   });
-
-  // Show confirmation snackbar
-  ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(
-      content: Text('${ThemeConstants.themeChangedMessage}${ThemeOptions.getDisplayName(mode)}'),
-      behavior: SnackBarBehavior.floating,
-      duration: ThemeConstants.snackBarDuration,
-      action: SnackBarAction(
-        label: ThemeConstants.undoLabel,
-        onPressed: () {
-          // TODO: Implement undo functionality if needed
-        },
-      ),
-    ),
-  );
 }
